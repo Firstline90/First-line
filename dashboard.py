@@ -24,6 +24,7 @@ import transfers
 import exceptions
 import operations
 import finance
+import logs
 
 tab_functions = {
     "لوحة التحكم": home.render,
@@ -39,3 +40,4 @@ tab_functions = {
 }
 
 tab_functions[choice](user)
+
