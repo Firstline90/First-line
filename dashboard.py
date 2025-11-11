@@ -15,16 +15,15 @@ choice = st.sidebar.radio("اختر التبويب", tabs)
 
 # عرض محتوى التبويب المختار
 st.title(f"📁 {choice}")
-import tabs.home as home
-import tabs.supervisors as supervisors
-import tabs.agents as agents
-import tabs.apps as apps
-import tabs.departments as departments
-import tabs.transfers as transfers
-import tabs.exceptions as exceptions
-import tabs.operations as operations
-import tabs.finance as finance
-import tabs.logs as logs
+import home
+import agents
+import supervisors
+import apps
+import departments
+import transfers
+import exceptions
+import operations
+import finance
 
 tab_functions = {
     "لوحة التحكم": home.render,
